@@ -21,19 +21,22 @@
     .logo-container {
       text-align: center;
       margin-top: 1rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.6rem; /* Tightened spacing below logo */
+      position: relative;
     }
 
     .logo {
-      height: 320px; /* Doubled from previous */
+      height: 320px;
     }
 
     nav {
+      position: absolute;
+      top: 50%; /* Align with middle of logo */
+      right: 3%;
+      transform: translateY(-50%);
       display: flex;
-      justify-content: space-between;
-      padding: 0 4rem; /* More spacing outwards */
-      margin-top: -2rem;
-      margin-bottom: 2rem;
+      gap: 1.5rem;
+      background: transparent;
     }
 
     nav a {
@@ -101,11 +104,12 @@
 
     @media (max-width: 768px) {
       nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 0;
+        position: static;
+        transform: none;
+        justify-content: center;
         margin-top: 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
       }
 
       .logo {
@@ -123,14 +127,14 @@
         alt="Headwater Logo"
         class="logo"
       />
-    </div>
 
-    <!-- Navigation -->
-    <nav>
-      <a href="https://www.gentlemanforager.com/">Home</a>
-      <a href="https://www.gentlemanforager.com/shop">Shop</a>
-      <a href="https://www.gentlemanforager.com/shop-headwater-functional-beverage">Pre-Order</a>
-    </nav>
+      <!-- Grouped Navigation Buttons -->
+      <nav>
+        <a href="https://www.gentlemanforager.com/">Home</a>
+        <a href="https://www.gentlemanforager.com/shop">Shop</a>
+        <a href="https://www.gentlemanforager.com/shop-headwater-functional-beverage">Pre-Order</a>
+      </nav>
+    </div>
   </div>
 
   <main class="container">
