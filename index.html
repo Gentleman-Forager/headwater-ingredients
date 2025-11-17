@@ -9,6 +9,7 @@
     body {
       background-color: #f9f6ef;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
     }
 
     .container {
@@ -19,20 +20,19 @@
 
     .logo-container {
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1.2rem;
     }
 
     .logo {
-      height: 160px;
-      margin-bottom: 1rem;
+      height: 320px; /* Doubled from previous */
     }
 
     nav {
       display: flex;
-      justify-content: flex-end;
-      gap: 2.5rem;
-      padding: 0 2rem;
-      margin-top: -3rem;
+      justify-content: space-between;
+      padding: 0 4rem; /* More spacing outwards */
+      margin-top: -2rem;
       margin-bottom: 2rem;
     }
 
@@ -104,11 +104,12 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding: 0;
         margin-top: 1rem;
       }
 
       .logo {
-        height: 120px;
+        height: 180px;
       }
     }
   </style>
