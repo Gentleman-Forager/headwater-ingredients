@@ -17,19 +17,26 @@
       padding: 1.5rem;
     }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 2rem 0;
+    .logo-container {
+      text-align: center;
+      margin-top: 2rem;
     }
 
     .logo {
-      height: 130px;
+      height: 160px;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2.5rem;
+      padding: 0 2rem;
+      margin-top: -3rem;
+      margin-bottom: 2rem;
     }
 
     nav a {
-      margin-left: 2rem;
       text-decoration: none;
       color: #006e6d;
       font-weight: 600;
@@ -93,39 +100,36 @@
     }
 
     @media (max-width: 768px) {
-      header {
+      nav {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-      }
-
-      nav {
+        gap: 1rem;
         margin-top: 1rem;
       }
 
-      nav a {
-        margin: 0 1rem;
-        display: inline-block;
-      }
-
       .logo {
-        height: 100px;
+        height: 120px;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <a href="https://www.gentlemanforager.com/">
-        <img src="https://static.wixstatic.com/media/7549c3_2fecc69d2b914b15893d7199b0c8797c~mv2.png" alt="Headwater Logo" class="logo" />
-      </a>
-      <nav>
-        <a href="https://www.gentlemanforager.com/">Home</a>
-        <a href="https://www.gentlemanforager.com/shop">Shop</a>
-        <a href="https://www.gentlemanforager.com/shop-headwater-functional-beverage">Pre-Order</a>
-      </nav>
-    </header>
+    <!-- Centered Logo -->
+    <div class="logo-container">
+      <img
+        src="https://static.wixstatic.com/media/7549c3_2fecc69d2b914b15893d7199b0c8797c~mv2.png"
+        alt="Headwater Logo"
+        class="logo"
+      />
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="https://www.gentlemanforager.com/">Home</a>
+      <a href="https://www.gentlemanforager.com/shop">Shop</a>
+      <a href="https://www.gentlemanforager.com/shop-headwater-functional-beverage">Pre-Order</a>
+    </nav>
   </div>
 
   <main class="container">
