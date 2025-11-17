@@ -1,155 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>What’s Inside Headwater</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
-    />
-    <style>
-      body {
-        background-color: #f9f6ef;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What's Inside Headwater</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.*/css/pico.min.css" />
+  <style>
+    body {
+      background-color: #f9f6ef;
+    }
 
-      main.container {
-        padding: 2rem 0;
-      }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #f9f6ef;
+    }
 
-      img.hero {
-        max-width: 100%;
-        height: auto;
-        margin: 1rem 0 2rem;
-        border-radius: 6px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
+    .logo {
+      height: 60px;
+    }
 
-      details summary {
-        font-weight: bold;
-      }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #006e6d;
+      font-weight: bold;
+    }
 
-      details {
-        background-color: white;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 6px;
-        border: 1px solid #ddd;
-      }
+    main.container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
 
-      nav ul:first-child strong {
-        font-size: 1.2rem;
-      }
+    img.hero {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 18px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
 
-      a {
-        color: #1c8d73;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="container-fluid">
-      <ul>
-        <li><strong>Headwater</strong></li>
-      </ul>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#" role="button">Pre-Order</a></li>
-      </ul>
+    details summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    details {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="https://www.gentlemanforager.com/">
+      <img src="https://static.wixstatic.com/media/7549c3_2fecc69d2b914b15893d7199b0c8797c~mv2.png" alt="Headwater Logo" class="logo" />
+    </a>
+    <nav>
+      <a href="https://www.gentlemanforager.com/">Home</a>
+      <a href="https://www.gentlemanforager.com/shop">Shop</a>
+      <a href="https://www.gentlemanforager.com/shop-headwater-functional-beverage">Pre-Order</a>
     </nav>
+  </header>
 
-    <main class="container">
-      <h2>What’s Inside Headwater</h2>
-      <h3>Ingredients & Science</h3>
-      <p>
-        Explore the real, natural ingredients behind Headwater's clean energy
-        and wellness support.
-      </p>
+  <main class="container">
+    <h2>What's Inside Headwater</h2>
+    <h3>Ingredients & Science</h3>
+    <p>Explore the real, natural ingredients behind Headwater's clean energy and wellness support.</p>
 
-      <img
-        src="https://static.wixstatic.com/media/7549c3_def40b4d841149c592fa43c8a018782e~mv2.png"
-        alt="Headwater Ingredients Illustration"
-        class="hero"
-      />
+    <img
+      src="https://static.wixstatic.com/media/7549c3_def40b4d841149c592fa43c8a018782e~mv2.png"
+      alt="What's Inside Headwater - Ingredients"
+      class="hero"
+    />
 
-      <a href="#">Back to Product Page</a>
+    <details>
+      <summary>Carbonated Water</summary>
+      <p>Pure, filtered water with gentle carbonation.</p>
+    </details>
 
-      <details>
-        <summary>Carbonated Water</summary>
-        <p>
-          Pure, filtered water infused with gentle carbonation for clean
-          hydration and refreshing mouthfeel without heavy sweetness or syrupy
-          texture.
-        </p>
-      </details>
+    <details>
+      <summary>All-Natural Agave Syrup</summary>
+      <p>A low-glycemic sweetener used sparingly for a touch of natural sweetness.</p>
+    </details>
 
-      <details>
-        <summary>All-Natural Agave Syrup</summary>
-        <p>
-          A low-glycemic sweetener used in small amounts to deliver light
-          sweetness without spikes or crashes. Supports flavor balance and
-          overall taste experience.
-        </p>
-      </details>
+    <details>
+      <summary>Citric Acid</summary>
+      <p>A fruit-derived acidifier that enhances tartness and preserves freshness.</p>
+    </details>
 
-      <details>
-        <summary>Citric Acid</summary>
-        <p>
-          A fruit-derived acidifier used to brighten flavor and support shelf
-          stability. Chosen for its ability to provide tartness without harsh
-          acidity.
-        </p>
-      </details>
+    <details>
+      <summary>L-Theanine</summary>
+      <p>A naturally occurring amino acid found in green tea that supports calm, focused energy and cognitive clarity.</p>
+    </details>
 
-      <details>
-        <summary>L-Theanine</summary>
-        <p>
-          An amino acid found in green tea that supports calm alertness, mental
-          clarity, and focus—without jitters or overstimulation.
-        </p>
-      </details>
+    <details>
+      <summary>Vitamin C</summary>
+      <p>Also known as Ascorbic Acid, Vitamin C supports immune health and natural antioxidant function.</p>
+    </details>
 
-      <details>
-        <summary>Vitamin C</summary>
-        <p>
-          An antioxidant that helps support healthy immune function and cellular
-          protection. Included to optimize immune wellness support.
-        </p>
-      </details>
+    <details>
+      <summary>Lion’s Mane Extract (Fruiting Body)</summary>
+      <p>Certified-organic Lion’s Mane extract, made only from the fruiting body. Supports cognitive clarity, memory, and focus—sourced for purity, potency, and consistency.</p>
+    </details>
 
-      <details>
-        <summary>Lion’s Mane Extract (Fruiting Body)</summary>
-        <p>
-          Certified-organic Lion’s Mane extract, made only from the fruiting
-          body. Supports cognitive clarity, memory, and focus—sourced for
-          purity, potency, and consistency.
-        </p>
-      </details>
+    <details>
+      <summary>Chaga Extract (Fruiting Body)</summary>
+      <p>Sustainably harvested Chaga extract from wild birch trees. Rich in polyphenols and antioxidants that help defend cells from stress and support overall resilience.</p>
+    </details>
 
-      <details>
-        <summary>Chaga Extract (Fruiting Body)</summary>
-        <p>
-          Sustainably harvested Chaga extract from wild birch trees. Rich in
-          polyphenols and antioxidants that help defend cells from stress and
-          support overall resilience.
-        </p>
-      </details>
+    <details>
+      <summary>Natural Flavor System (Blueberry / Tangerine)</summary>
+      <p>Natural flavors crafted to highlight the ingredients—not mask them. Chosen to create a clean, bright taste experience with no mushroom flavor or aftertaste.</p>
+    </details>
+  </main>
 
-      <details>
-        <summary>Natural Flavor System (Blueberry / Tangerine)</summary>
-        <p>
-          Natural flavors crafted to highlight the ingredients—not mask them.
-          Chosen to create a clean, bright taste experience with no mushroom
-          flavor or aftertaste.
-        </p>
-      </details>
-    </main>
-
-    <footer class="container">
-      <small>
-        <a href="#">Return to main site</a> •
-        <a href="#">Privacy Policy</a>
-      </small>
-    </footer>
-  </body>
+  <footer>
+    <small>
+      <a href="https://www.gentlemanforager.com">Return to main site</a> •
+      <a href="#">Privacy Policy</a>
+    </small>
+  </footer>
+</body>
 </html>
