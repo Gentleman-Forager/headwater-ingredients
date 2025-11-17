@@ -11,16 +11,21 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1.5rem 4rem;
-      background-color: #f9f6ef;
+      padding: 2rem 0;
     }
 
     .logo {
-      height: 100px;
+      height: 130px;
     }
 
     nav a {
@@ -32,13 +37,13 @@
     }
 
     main.container {
-      max-width: 1100px;
-      margin: 3rem auto;
+      max-width: 1000px;
+      margin: 2rem auto;
       padding: 2rem;
     }
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 800;
       margin-bottom: 0.5rem;
       text-align: center;
@@ -46,7 +51,7 @@
 
     h3 {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       color: #444;
     }
 
@@ -90,32 +95,38 @@
     @media (max-width: 768px) {
       header {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem 2rem;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 1rem;
       }
 
       nav a {
-        margin: 0.5rem 0 0 0;
+        margin: 0 1rem;
+        display: inline-block;
       }
 
       .logo {
-        height: 80px;
-        margin-bottom: 1rem;
+        height: 100px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <a href="https://www.gentlemanforager.com/">
-      <img src="https://static.wixstatic.com/media/7549c3_2fecc69d2b914b15893d7199b0c8797c~mv2.png" alt="Headwater Logo" class="logo" />
-    </a>
-    <nav>
-      <a href="https://www.gentlemanforager.com/">Home</a>
-      <a href="https://www.gentlemanforager.com/shop">Shop</a>
-      <a href="https://www.gentlemanforager.com/shop-headwater-functional-beverage">Pre-Order</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <a href="https://www.gentlemanforager.com/">
+        <img src="https://static.wixstatic.com/media/7549c3_2fecc69d2b914b15893d7199b0c8797c~mv2.png" alt="Headwater Logo" class="logo" />
+      </a>
+      <nav>
+        <a href="https://www.gentlemanforager.com/">Home</a>
+        <a href="https://www.gentlemanforager.com/shop">Shop</a>
+        <a href="https://www.gentlemanforager.com/shop-headwater-functional-beverage">Pre-Order</a>
+      </nav>
+    </header>
+  </div>
 
   <main class="container">
     <h2>What’s Inside Headwater</h2>
@@ -177,4 +188,3 @@
   </footer>
 </body>
 </html>
-
